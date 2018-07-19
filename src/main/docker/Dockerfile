@@ -1,4 +1,4 @@
-FROM 172.16.1.92:8082/jdk8
+FROM openjdk:8-jdk-alpine
 VOLUME /tmp
 ADD com-test-snail-1.0-SNAPSHOT.jar /app.jar
 RUN sh -c 'touch /app.jar'
